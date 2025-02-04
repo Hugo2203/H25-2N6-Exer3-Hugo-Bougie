@@ -1,5 +1,5 @@
 import os                             # N'enlevez pas ces lignes.
-os.chdir(os.path.dirname("C:/Users/hugo2/OneDrive - Cégep Édouard-Montpetit/420-2N6 Programmation 2 1070/Exercises/R03 Exercices Depart Hugo Bougie/csvs"))   # Elles permettent de se positionner dans le répertoire de ce script
+os.chdir(os.path.dirname("R03 Exercices Depart Hugo Bougie/csvs/"))   # Elles permettent de se positionner dans le répertoire de ce script
 
 
 
@@ -9,11 +9,14 @@ import csv
 
 # Nous avons des offres de stages and le fichier "Ex4 Emplois Reseautique.csv"
 # Faites un petit script qui ouvre le fichier csv en mode lecture et qui affiche uniquement les offres ou la demande de Diplôme a la valeur 'Dec' ou 'Non déterminé'
-with open("Ex4 Emplois Reseautique.csv" ,'r',encoding='utf_8') as csv_file:
-    csv_reader = csv.reader(csv_file)
+with open('Ex4 Emplois Reseautique.csv','r',encoding='utf_8') as csv_file:
+    csv_reader = csv.reader(csv_file,delimiter=";")
     next(csv_reader)
     for line in csv_reader:
-        print(line)
+        if "Dec" in line[4]:
+            print(line)
+        elif "Non déterminé" in line[4]:
+            print(line)    
 
 # Regardez le contenu du fichier "Ex4 Emplois Reseautique.csv"
 #          Observez que dans ce fichier, la première ligne comprends les en-têtes de colonne 
