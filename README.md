@@ -5,4 +5,5 @@ voici un modification de ligne
 
 
 ## Mise-à-jour local
-modification fait sur ma machine locale.
+voici une nouvelle modif 
+cette fois ci avec un supression dune ligne
