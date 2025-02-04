@@ -12,5 +12,9 @@ os.chdir(path="R03 Exercices Depart Hugo Bougie\Ex3 Videos")
 
 for file in os.listdir():
    file_Split= os.path.splitext(file)
-   
-   print(file_Split[0].split("_"))
+   filename = file_Split[0]
+   filename_split =filename.split("_")
+   titre = filename_split[0].strip()
+   nom_cours = filename_split[1].strip()
+   numero_cour = filename_split[2].strip()
+   print()
