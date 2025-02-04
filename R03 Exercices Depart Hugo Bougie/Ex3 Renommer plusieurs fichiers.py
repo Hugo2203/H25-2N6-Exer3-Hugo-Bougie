@@ -19,4 +19,4 @@ for file in os.listdir():
    numero_cours = filename_split[2]
    numero_cours_simple = numero_cours[2:]
    numcours_zfill=numero_cours_simple.zfill(2)
-   
+   os.rename(file,f"{titre,nom_cours,} #{numcours_zfill}.mp4")
