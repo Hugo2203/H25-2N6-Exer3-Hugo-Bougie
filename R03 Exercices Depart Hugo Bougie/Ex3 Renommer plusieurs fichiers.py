@@ -7,7 +7,7 @@
 # #     en plus utilisez zfill pour remplir le numéro de sorte que 1 deviendra 01
 # #     recréez le nouveau nom de fichier#   utliser os.rename pour renommer le fichier
 import os
-os.chdir(path="C:/Users/6286734\Documents/GitHub/H25-2N6-Exer3-Hugo-Bougie/R03 Exercices Depart Hugo Bougie/Ex3 Videos")
+os.chdir(path="C:/Users/6286734/Documents/GitHub/H25-2N6-Exer3-Hugo-Bougie/R03 Exercices Depart Hugo Bougie/Ex3 Videos")
 
 for file in os.listdir():
    file_Split= os.path.splitext(file)
