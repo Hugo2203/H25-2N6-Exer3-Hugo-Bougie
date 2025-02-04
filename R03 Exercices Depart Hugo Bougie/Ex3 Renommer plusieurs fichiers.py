@@ -16,5 +16,5 @@ for file in os.listdir():
    filename_split =filename.split("_")
    titre = filename_split[0].strip()
    nom_cours = filename_split[1].strip()
-   numero_cour = filename_split[2].strip()
-   print()
+   numero_cours = filename_split[2]
+   print(numero_cours)
