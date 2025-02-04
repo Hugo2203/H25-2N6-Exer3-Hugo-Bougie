@@ -1,6 +1,6 @@
 # H25-2N6-Exer3-Hugo-Bougie
 
-## Mise-àjour en ligne
+## Mise-à-jour en ligne
 voici un modification de ligne
 
 
